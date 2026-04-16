@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Sekuya&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin:0;
+    padding:0;
+    background-image:url("geometric-science-education-background-vector-gradient-blue-digital-remix_53876-125993.avif");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    min-height: 100vh;
+    font-family:verdana;
+}
+.pages_bar {
+    background-color: #141213;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items:centre;
+    padding: 10px 20px;
+    min-height: 50px;
+}
+.pages_bar .link:hover {
+    color: white; 
+    text-decoration: none;
+}
+.top-links {
+    display: flex;
+    align-items:center;
+    gap: 5px;
+}
+.link {
+    color: #63b3ed;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 5px 11px;
+    border-radius: 6px;
+}
+.link:hover{
+    color:white;
+    background-color:#333
+}
+.name {
+    color: #4169E1;
+    font-size: 18px;
+    font-weight:bold;
+    white-space: nowrap;
+}
+.main-menu{
+   display: flex;
+    flex-direction: column;
+    align-items: center;       
+    width: 100%;
+    justify-content:flex-start;
+    margin-top:10px;
+}
+.main-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;             
+    width: 100%;
+    align-items: center;
+}
+.bottom {
+
+    background-color: #1b065b;
+    width: 80%;          
+    max-width: 600px;  
+    margin:5px auto !important;    
+    padding: 18px;       
+    border-radius: 35px;      
+    text-align: center;
+}
+.link0 {
+    color: #f3efea;
+    text-decoration: none;   
+    font-size: 24px;         
+    display: block;            
+    font-family: 'serif';
+}
+.bottom:hover {
+    background-color: #0e0000; 
+}
+body{
+    overflow:hidden;
+    height:100vh;
+    margin:0
+}
+/* ── MAIN CONTENT ── */
+main {
+    flex: 1;
+    text-align:center;
+    justify-content:flex-start;
+    margin-top: 10px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+/* Home page */
+.welcome {
+    font-family: 'Great Vibes', cursive;
+    font-size:80px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.p1 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-size: clamp(14px, 4vw, 18px);
+    color: #080000;
+}
+.form-wrapper {
+    background-color: #0f0987;
+    padding: 24px 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 520px;
+    margin: 50px auto;
+}
+
+.form-wrapper label {
+    color: #d6d6d6;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-wrapper input[type="text"],
+.form-wrapper input[type="email"],
+.form-wrapper input[type="number"],
+.form-wrapper textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: none;
+    border-radius: 4px;
+    color: #000;
+    font-size: 15px;
+    margin-bottom: 18px;
+    background: #fff;
+}
+
+.form-wrapper textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.submit {
+    background-color: rgb(4, 4, 130);
+    color: #d6d6d6;
+    border: none;
+    padding: 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    width: 45%;
+}
+.submit:hover {
+    background-color: #05116a;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #888;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+    opacity: 1;
+}
+/* ── CONTACT PAGE ── */
+.contact {
+    background-color: #030424;
+    padding: 20px;
+    border-radius: 20px;
+    width: 80%;
+    max-width: 450px;
+    margin: 0px auto;
+}
+.contact table {
+    width: 100%;
+    border-spacing: 0 6px;
+}
+.contact td {
+    text-align: center;
+}
+.contact label {
+    color: white;
+    font-family: 'serif';
+    font-weight: bold;
+    display: block;
+    margin-bottom: 2px;
+}
+.contact input[type="text"], 
+.contact input[type="email"], 
+.contact textarea {
+    width: 90%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.contact textarea {
+    height: 100px;
+}
+.contact .submit {
+    width: 90%;
+    padding: 12px;
+    background-color: #1b065b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.contact-title {
+    color: #111;
+    font-size: 50px;
+    font-family:'serif';
+    text-align: center;
+    margin-top:40px;
+    margin-bottom:0px;
+    font-weight:bold;
+    padding: 0px 10px;
+}
+.or {
+    color: #110000;
+    text-align: left;
+    font-size: 15px;
+    margin: 0px;
+}
+/* ── COURSES TABLE ── */
+.course_container {
+    margin: 40px auto;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    background-color: #170755; 
+    border-radius: 15px;
+    overflow: hidden;
+}
+.course_container table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #d6d6d6;
+    font-family: sans-serif;
+}
+.course_container th {
+    background-color: #0c042d;
+    padding: 15px;
+    border: 1px solid #444;
+   text-align: center;
+}
+.course_container td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: center ;
+}
+/* ── SECTION HEADING ── */
+.section-heading {
+    color: #111;
+    font-size: clamp(18px, 5vw, 26px);
+    text-align: center;
+    margin: 90px auto 10px;
+    padding: 0 16px;
+}
+.c1 {
+    text-align: center;
+    font-size: 35px;
+    color: #111;
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+    display: block;
+}
+section form {
+    background-color: #09063c;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    width: 90%;
+    margin: 5px 5px;
+}
+section form label {
+    color: #d6d6d6;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 500;
+    text-align:left;
+}
+section form input[type="text"],
+section form input[type="number"],
+section form textarea {
+    width: 100%;
+    padding: 9px;
+    margin-bottom: 9px;
+    border: 1px solid #444;
+    border-radius: 8px;
+    background-color: #fff;
+    box-sizing: border-box; 
+}
+.submit {
+    background-color: #170755;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px ;
+    font-size: 18px ;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100% ;
+    display: block;
+}
+
+.submit:hover {
+    background-color: #0c042d ;
+}
+
+/* ── FOOTER ── */
+footer {
+    background-color: #cccccc;
+    width: 100% ;
+    padding: 15px 0 ;
+    display: flex ;
+    justify-content: center;
+    align-items: center ;
+    margin: 0;
+    position: fixed ;
+    bottom: 0;
+    left: 0;
+}
+footer p {
+    margin: 0 ; 
+    position:fixed;
+    color: #333 ;
+    font-family: sans-serif;
+    font-size: 14px ;
+    text-align: center;
+}
+
+/* ── RESPONSIVE ── */
+
+/* Tablet and up: show top nav links, hide bottom nav */
+@media (min-width: 600px) {
+    .bottom-nav {
+        display: none !important;
+    }
+
+    main {
+        margin-bottom: 0;
+    }
+}
+
+/* Mobile: show bottom nav, hide top nav links */
+@media (max-width: 599px) {
+    .top-links {
+        display: none;
+    }
+
+    .pages_bar {
+        justify-content: center;
+    }
+
+    .bottom-nav {
+        display: flex;
+    }
+
+    main {
+        margin-bottom: 70px;
+    }
+
+    .welcome {
+        margin-top: 20px;
+    }
+
+    .form-wrapper {
+        margin: 10px auto 30px;
+    }
+
+    .contact-title {
+        margin-top: 70px;
+    }
+
+    .section-heading {
+        margin-top: 70px;
+    }
+}
